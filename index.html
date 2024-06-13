@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeMasterBot</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://raw.githubusercontent.com/MohamedMostafa259/CodeMasterBot/main/Background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%; /* Set minimum height to cover the viewport */
+  }
+
+  #chat-box {
+    /* height: 100vh; /* Take the whole screen */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black color */
+    padding: 10px;
+    border-radius: 5px;
+    color: #f0f8ff; /* Set text color to red */
+  }
+
+  #query-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #user-input {
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  #send-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .chat-link {
+    color: blue; /* Set link color to blue */
+    text-decoration: underline; /* Underline links */
+    cursor: pointer;
+  }
+  
+  .chat-link:hover {
+    color: purple; /* Change link color on hover */
+  }
+
+  /* Add 20px left margin to paragraphs */
+  p {
+    margin-left: 20px;
+  }
+
+  /* Add 20px left padding to div elements */
+  div {
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+<div id="chat-box"></div>
+<div id="query-bar">
+  <input type="text" id="user-input" placeholder="Type your message...">
+  <button id="send-button">Send</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
